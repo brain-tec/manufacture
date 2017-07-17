@@ -3,12 +3,14 @@
 # * mrp_project
 # 
 # Translators:
+# Dorin Hongu <dhongu@gmail.com>, 2015
+# Hotellook, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: manufacture (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-05 01:43+0000\n"
-"PO-Revision-Date: 2015-12-04 17:50+0000\n"
+"POT-Creation-Date: 2017-04-24 13:59+0000\n"
+"PO-Revision-Date: 2017-03-31 13:01+0000\n"
 "Last-Translator: OCA Transbot <transbot@odoo-community.org>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/oca/OCA-manufacture-8-0/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. module: mrp_project
-#: code:addons/mrp_project/models/mrp_production.py:33
+#: code:addons/mrp_project/models/mrp_production.py:40
 #, python-format
 msgid ""
 "\n"
@@ -33,12 +35,12 @@ msgstr ""
 #. module: mrp_project
 #: view:account.analytic.line:mrp_project.account_analytic_line_mrp_search_view
 msgid "Analytic Account"
-msgstr ""
+msgstr "Conta analítica"
 
 #. module: mrp_project
 #: model:ir.model,name:mrp_project.model_account_analytic_line
 msgid "Analytic Line"
-msgstr ""
+msgstr "Linhas Analíticas"
 
 #. module: mrp_project
 #: field:project.project,automatic_creation:0
@@ -64,7 +66,13 @@ msgid "Manufacturing"
 msgstr ""
 
 #. module: mrp_project
+#: field:project.project,production_count:0
+msgid "Manufacturing Count"
+msgstr ""
+
+#. module: mrp_project
 #: field:account.analytic.line,mrp_production_id:0
+#: field:hr.analytic.timesheet,mrp_production_id:0
 #: model:ir.model,name:mrp_project.model_mrp_production
 #: field:project.task,mrp_production_id:0
 msgid "Manufacturing Order"
@@ -83,6 +91,7 @@ msgstr ""
 #. module: mrp_project
 #: view:project.task:mrp_project.project_task_mrp_form_view
 #: view:project.task:mrp_project.project_task_mrp_inh_tree_view
+#: field:project.task,final_product:0
 msgid "Product to Produce"
 msgstr ""
 
@@ -93,7 +102,7 @@ msgid "Project"
 msgstr "Projeto"
 
 #. module: mrp_project
-#: field:account.analytic.line,task_id:0
+#: field:account.analytic.line,task_id:0 field:hr.analytic.timesheet,task_id:0
 msgid "Project Task"
 msgstr ""
 
@@ -104,18 +113,19 @@ msgstr ""
 
 #. module: mrp_project
 #: view:project.task:mrp_project.project_task_mrp_form_view
+#: field:project.task,production_scheduled_products:0
 msgid "Scheduled Products"
 msgstr ""
 
 #. module: mrp_project
 #: view:project.task:mrp_project.project_task_mrp_inh_search_view
 msgid "Stage"
-msgstr ""
+msgstr "Estágio"
 
 #. module: mrp_project
 #: model:ir.model,name:mrp_project.model_project_task
 msgid "Task"
-msgstr ""
+msgstr "Tarefa"
 
 #. module: mrp_project
 #: field:mrp.production.workcenter.line,work_ids:0
@@ -128,7 +138,13 @@ msgid "Tasks"
 msgstr ""
 
 #. module: mrp_project
+#: model:ir.model,name:mrp_project.model_hr_analytic_timesheet
+msgid "Timesheet Line"
+msgstr ""
+
+#. module: mrp_project
 #: field:account.analytic.line,workorder:0
+#: field:hr.analytic.timesheet,workorder:0
 #: model:ir.model,name:mrp_project.model_mrp_production_workcenter_line
 #: field:project.task,workorder:0
 msgid "Work Order"

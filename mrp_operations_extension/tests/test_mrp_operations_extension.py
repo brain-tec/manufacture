@@ -42,6 +42,7 @@ class TestMrpOperationsExtension(common.TransactionCase):
         self.produce_line_model = self.env['mrp.product.produce.line']
         self.production = self.env.ref(
             'mrp_operations_extension.mrp_production_opeext')
+        self.workcenter_line_finish = self.env['workcenter.line.finish']
 
     def test_check_do_production_mrp_routing(self):
         # None of the workcenter lines have the check marked
@@ -156,6 +157,7 @@ class TestMrpOperationsExtension(common.TransactionCase):
             self.production.action_confirm()
 
     def test_confirm_production_operation_extension_case1(self):
+        self.assertEqual(self.production.state, 'draft')
         self.production.signal_workflow('button_confirm')
         self.assertFalse(self.production.workcenter_lines[0].is_material_ready)
         self.production.force_production()
@@ -187,3 +189,59 @@ class TestMrpOperationsExtension(common.TransactionCase):
             self.assertEqual(
                 line.state, 'done',
                 'Error work center line not in done state')
+
+    def test_operation_button_done(self):
+        self.production.signal_workflow('button_confirm')
+        workorder = self.production.workcenter_lines[0]
+        workorder.action_assign()
+        workorder.force_assign()
+        workorder.signal_workflow('button_start_working')
+        res = workorder.button_done()
+        if res:  # check make_them_done
+            lines2move = len(workorder.move_lines.filtered(
+                lambda x: x.state not in ('done')))
+            self.workcenter_line_finish.with_context(
+                active_id=workorder.id,
+                active_model='mrp.production.workcenter.line').make_them_done()
+            lines_done = len(workorder.move_lines.filtered(
+                lambda x: x.state in ('done')))
+            self.assertEqual(lines2move, lines_done,
+                             'Error work order moves quantity do not match')
+            self.assertEqual(workorder.state, 'done',
+                             'Error work center line not in done state')
+        workorder1 = self.production.workcenter_lines[1]
+        workorder1.signal_workflow('button_start_working')
+        res1 = workorder1.button_done()
+        self.assertFalse(res1, 'Error there are pending movements')
+        workorder2 = self.production.workcenter_lines[2]
+        workorder2.action_assign()
+        workorder2.force_assign()
+        workorder2.signal_workflow('button_start_working')
+        res2 = workorder2.button_done()
+        if res2:  # check cancel_all
+            lines2move2 = len(workorder2.move_lines.filtered(
+                lambda x: x.state not in ('cancel')))
+            self.workcenter_line_finish.with_context(
+                active_id=workorder2.id,
+                active_model='mrp.production.workcenter.line').cancel_all()
+            lines_cancel = len(workorder2.move_lines.filtered(
+                lambda x: x.state in ('cancel')))
+            self.assertEqual(lines2move2, lines_cancel,
+                             'Error work order moves quantity do not match')
+            self.assertEqual(workorder2.state, 'done',
+                             'Error work center line not in done state')
+
+    def test_param_config(self):
+        wiz_config_obj = self.env['mrp.config.settings']
+        param_obj = self.env['ir.config_parameter']
+        rec = param_obj.search([('key', '=', 'cycle.by.bom')])
+        self.assertEqual(rec.value, 'True', 'Error cycle.by.bom is not marked')
+        rec.unlink()
+        record = wiz_config_obj.new()
+        record.set_parameter_cycle_bom()
+        data = record.get_default_parameter_cycle_bom()
+        self.assertFalse(data['cycle_by_bom'], 'Error cycle.by.bom is marked')
+        record.cycle_by_bom = True
+        record.set_parameter_cycle_bom()
+        data = record.get_default_parameter_cycle_bom()
+        self.assertTrue(data['cycle_by_bom'], 'Error cycle.by.bom not marked')

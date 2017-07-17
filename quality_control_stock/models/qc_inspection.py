@@ -29,6 +29,8 @@ class QcInspection(models.Model):
                 self.lot = self.object_id.lot_id
             elif self.object_id._name == 'stock.move':
                 self.lot = self.object_id.lot_ids[:1]
+            elif self.object_id._name == 'stock.production.lot':
+                self.lot = self.object_id
 
     @api.one
     @api.depends('object_id')
@@ -39,6 +41,8 @@ class QcInspection(models.Model):
             if self.object_id._name == 'stock.move':
                 self.product = self.object_id.product_id
             elif self.object_id._name == 'stock.pack.operation':
+                self.product = self.object_id.product_id
+            elif self.object_id._name == 'stock.production.lot':
                 self.product = self.object_id.product_id
 
     @api.onchange('object_id')
@@ -56,6 +60,8 @@ class QcInspection(models.Model):
         # Fill qty when coming from pack operations
         if object_ref and object_ref._name == 'stock.pack.operation':
             res['qty'] = object_ref.product_qty
+        if object_ref and object_ref._name == 'stock.move':
+            res['qty'] = object_ref.product_uom_qty
         return res
 
     picking = fields.Many2one(

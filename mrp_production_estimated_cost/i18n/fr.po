@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: manufacture (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-26 01:43+0000\n"
-"PO-Revision-Date: 2016-02-25 18:29+0000\n"
-"Last-Translator: <>\n"
+"POT-Creation-Date: 2017-02-23 09:33+0000\n"
+"PO-Revision-Date: 2017-02-21 13:25+0000\n"
+"Last-Translator: OCA Transbot <transbot@odoo-community.org>\n"
 "Language-Team: French (http://www.transifex.com/oca/OCA-manufacture-8-0/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,25 +18,25 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. module: mrp_production_estimated_cost
-#: code:addons/mrp_production_estimated_cost/models/mrp_production.py:182
+#: code:addons/mrp_production_estimated_cost/models/mrp_production.py:188
 #, python-format
 msgid "%s-%s Post-operation"
 msgstr ""
 
 #. module: mrp_production_estimated_cost
-#: code:addons/mrp_production_estimated_cost/models/mrp_production.py:170
+#: code:addons/mrp_production_estimated_cost/models/mrp_production.py:176
 #, python-format
 msgid "%s-%s Pre-operation"
 msgstr ""
 
 #. module: mrp_production_estimated_cost
-#: code:addons/mrp_production_estimated_cost/models/mrp_production.py:198
+#: code:addons/mrp_production_estimated_cost/models/mrp_production.py:204
 #, python-format
 msgid "%s-%s-C-%s"
 msgstr ""
 
 #. module: mrp_production_estimated_cost
-#: code:addons/mrp_production_estimated_cost/models/mrp_production.py:216
+#: code:addons/mrp_production_estimated_cost/models/mrp_production.py:222
 #, python-format
 msgid "%s-%s-H-%s"
 msgstr ""
@@ -44,22 +44,30 @@ msgstr ""
 #. module: mrp_production_estimated_cost
 #: field:mrp.production,active:0
 msgid "Active"
-msgstr ""
+msgstr "Actif"
 
 #. module: mrp_production_estimated_cost
 #: model:ir.model,name:mrp_production_estimated_cost.model_account_analytic_line
 msgid "Analytic Line"
-msgstr ""
+msgstr "Ligne analytique"
 
 #. module: mrp_production_estimated_cost
 #: field:wiz.create.virtual.mo,analytic_account_id:0
 msgid "Analytic account"
-msgstr ""
+msgstr "Compte Analytique"
 
 #. module: mrp_production_estimated_cost
 #: view:wiz.create.virtual.mo:mrp_production_estimated_cost.wiz_create_virtual_mo_view
 msgid "Cancel"
 msgstr "Annuler"
+
+#. module: mrp_production_estimated_cost
+#: help:mrp.production,product_cost:0
+msgid ""
+"Cost price of the product template used for standard stock valuation in "
+"accounting and used as a base price on purchase orders. Expressed in the "
+"default unit of measure of the product."
+msgstr ""
 
 #. module: mrp_production_estimated_cost
 #: view:mrp.production:mrp_production_estimated_cost.mrp_production_buttons_inh_estimatedcost
@@ -96,6 +104,11 @@ msgid "Created on"
 msgstr "Créé le"
 
 #. module: mrp_production_estimated_cost
+#: field:wiz.create.virtual.mo,display_name:0
+msgid "Display Name"
+msgstr "Nom à afficher"
+
+#. module: mrp_production_estimated_cost
 #: view:account.analytic.line:mrp_production_estimated_cost.estimated_cost_list_view
 #: view:account.analytic.line:mrp_production_estimated_cost.view_account_analytic_line_tree_inh_estimatedcost
 msgid "Estim. AVG"
@@ -120,6 +133,7 @@ msgstr ""
 
 #. module: mrp_production_estimated_cost
 #: view:account.analytic.line:mrp_production_estimated_cost.estimated_cost_list_view
+#: field:mrp.production,created_estimated_cost:0
 msgid "Estimated Costs"
 msgstr ""
 
@@ -142,12 +156,17 @@ msgstr ""
 #. module: mrp_production_estimated_cost
 #: view:account.analytic.line:mrp_production_estimated_cost.view_account_analytic_line_form_inh_estimatedcost
 msgid "General Accounting"
-msgstr ""
+msgstr "Compte général"
 
 #. module: mrp_production_estimated_cost
 #: field:wiz.create.virtual.mo,id:0
 msgid "ID"
 msgstr "Id."
+
+#. module: mrp_production_estimated_cost
+#: field:wiz.create.virtual.mo,__last_update:0
+msgid "Last Modified on"
+msgstr "Dernière modification le"
 
 #. module: mrp_production_estimated_cost
 #: field:wiz.create.virtual.mo,write_uid:0
@@ -170,6 +189,7 @@ msgid "Load cost on product"
 msgstr ""
 
 #. module: mrp_production_estimated_cost
+#: field:product.product,manual_standard_cost:0
 #: field:product.template,manual_standard_cost:0
 msgid "Manual Standard Cost"
 msgstr ""
@@ -177,17 +197,32 @@ msgstr ""
 #. module: mrp_production_estimated_cost
 #: model:ir.model,name:mrp_production_estimated_cost.model_mrp_production
 msgid "Manufacturing Order"
-msgstr ""
+msgstr "Ordre de fabrication"
 
 #. module: mrp_production_estimated_cost
 #: view:mrp.production:mrp_production_estimated_cost.mrp_production_form_view_inh_estimatedcost
 msgid "Manufacturing costs"
+msgstr "Coûts de fabrication"
+
+#. module: mrp_production_estimated_cost
+#: code:addons/mrp_production_estimated_cost/models/mrp_production.py:161
+#, python-format
+msgid "One consume line has no product assigned."
 msgstr ""
 
 #. module: mrp_production_estimated_cost
-#: code:addons/mrp_production_estimated_cost/models/mrp_production.py:155
-#, python-format
-msgid "One consume line has no product assigned."
+#: model:ir.model,name:mrp_production_estimated_cost.model_product_product
+msgid "Product"
+msgstr "Article"
+
+#. module: mrp_production_estimated_cost
+#: field:mrp.production,product_cost:0
+msgid "Product Cost"
+msgstr ""
+
+#. module: mrp_production_estimated_cost
+#: field:mrp.production,product_manual_cost:0
+msgid "Product Manual Cost"
 msgstr ""
 
 #. module: mrp_production_estimated_cost
@@ -213,11 +248,11 @@ msgstr ""
 #. module: mrp_production_estimated_cost
 #: field:wiz.create.virtual.mo,date_planned:0
 msgid "Scheduled Date"
-msgstr ""
+msgstr "Date Prévue"
 
 #. module: mrp_production_estimated_cost
-#: code:addons/mrp_production_estimated_cost/models/mrp_production.py:196
-#: code:addons/mrp_production_estimated_cost/models/mrp_production.py:213
+#: code:addons/mrp_production_estimated_cost/models/mrp_production.py:202
+#: code:addons/mrp_production_estimated_cost/models/mrp_production.py:219
 #, python-format
 msgid "There is at least this workcenter without product: %s"
 msgstr ""
@@ -234,7 +269,7 @@ msgid "Virtual Manufacturing Orders to estimate costs"
 msgstr ""
 
 #. module: mrp_production_estimated_cost
-#: code:addons/mrp_production_estimated_cost/models/mrp_production.py:131
+#: code:addons/mrp_production_estimated_cost/models/mrp_production.py:137
 #, python-format
 msgid "You must define one Analytic Account for this MO: %s"
 msgstr ""
