@@ -3,7 +3,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 {
     'name': 'MRP Multi Level',
-    'version': '11.0.1.0.1',
+    'version': '11.0.1.1.0',
     'development_status': 'Beta',
     'license': 'AGPL-3',
     'author': 'Ucamco, '
@@ -24,7 +24,8 @@
         'security/mrp_multi_level_security.xml',
         'security/ir.model.access.csv',
         'views/mrp_area_view.xml',
-        'views/product_view.xml',
+        'views/product_product_view.xml',
+        'views/product_template_view.xml',
         'views/stock_location_view.xml',
         'views/mrp_product_view.xml',
         'wizards/mrp_inventory_procure_view.xml',
