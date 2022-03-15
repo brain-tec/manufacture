@@ -4,7 +4,7 @@
 
 {
     "name": "MRP Multi Level",
-    "version": "15.0.1.1.0",
+    "version": "15.0.1.2.0",
     "development_status": "Production/Stable",
     "license": "LGPL-3",
     "author": "Ucamco, ForgeFlow, Odoo Community Association (OCA)",
@@ -25,6 +25,7 @@
         "views/mrp_inventory_views.xml",
         "views/mrp_planned_order_views.xml",
         "wizards/mrp_multi_level_views.xml",
+        "views/mrp_move_views.xml",
         "views/mrp_menuitem.xml",
         "data/mrp_multi_level_cron.xml",
         "data/mrp_area_data.xml",
