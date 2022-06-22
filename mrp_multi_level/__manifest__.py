@@ -4,7 +4,7 @@
 
 {
     "name": "MRP Multi Level",
-    "version": "13.0.1.9.0",
+    "version": "13.0.1.10.0",
     "license": "LGPL-3",
     "author": "Ucamco, ForgeFlow, Odoo Community Association (OCA)",
     "maintainers": ["JordiBForgeFlow", "LoisRForgeFlow"],
@@ -22,6 +22,7 @@
         "views/stock_location_views.xml",
         "wizards/mrp_inventory_procure_views.xml",
         "views/mrp_inventory_views.xml",
+        "views/mrp_move_views.xml",
         "views/mrp_planned_order_views.xml",
         "wizards/mrp_multi_level_views.xml",
         "views/mrp_menuitem.xml",
