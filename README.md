@@ -31,7 +31,7 @@ addon | version | maintainers | summary
 [mrp_bom_hierarchy](mrp_bom_hierarchy/) | 14.0.1.0.0 |  | Make it easy to navigate through BoM hierarchy.
 [mrp_bom_location](mrp_bom_location/) | 14.0.1.0.1 |  | Adds location field to Bill of Materials and its components.
 [mrp_bom_tracking](mrp_bom_tracking/) | 14.0.1.1.0 |  | Logs any change to a BoM in the chatter
-[mrp_multi_level](mrp_multi_level/) | 14.0.1.7.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds an MRP Scheduler
+[mrp_multi_level](mrp_multi_level/) | 14.0.1.8.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 14.0.1.0.3 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
 [mrp_planned_order_matrix](mrp_planned_order_matrix/) | 14.0.1.1.0 |  | Allows to create fixed planned orders on a grid view.
 [mrp_production_grouped_by_product](mrp_production_grouped_by_product/) | 14.0.1.0.2 |  | Production Grouped By Product
@@ -56,7 +56,7 @@ addon | version | maintainers | summary
 [repair_discount](repair_discount/) | 14.0.1.0.0 |  | Repair Discount
 [repair_refurbish](repair_refurbish/) | 14.0.1.0.1 |  | Create refurbished products during repair
 [repair_stock_move](repair_stock_move/) | 14.0.1.0.1 |  | Ongoing Repair Stock Moves Definition in odoo
-[repair_type](repair_type/) | 14.0.1.0.1 |  | Repair type
+[repair_type](repair_type/) | 14.0.1.0.2 |  | Repair type
 [stock_picking_product_kit_helper](stock_picking_product_kit_helper/) | 14.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Set quanity in picking line based on product kit quantity
 [stock_whole_kit_constraint](stock_whole_kit_constraint/) | 14.0.1.0.0 |  | Avoid to deliver a kit partially
 
