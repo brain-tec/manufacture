@@ -4,7 +4,7 @@
 
 {
     "name": "MRP Multi Level",
-    "version": "13.0.1.11.1",
+    "version": "13.0.1.12.0",
     "license": "LGPL-3",
     "author": "Ucamco, ForgeFlow, Odoo Community Association (OCA)",
     "maintainers": ["JordiBForgeFlow", "LoisRForgeFlow"],
@@ -15,6 +15,7 @@
     "data": [
         "security/mrp_multi_level_security.xml",
         "security/ir.model.access.csv",
+        "data/system_parameter.xml",
         "views/mrp_area_views.xml",
         "views/product_product_views.xml",
         "views/product_template_views.xml",
