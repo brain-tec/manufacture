@@ -11,7 +11,7 @@ class StockMove(models.Model):
     # While https://github.com/odoo/odoo/pull/74268 is not closed.
     def _should_bypass_set_qty_producing(self):
         res = super()._should_bypass_set_qty_producing()
-        if self.has_tracking != "none" and float_is_zero(
+        if self.has_tracking != "none" and not float_is_zero(
             self.quantity_done, precision_rounding=self.product_uom.rounding
         ):
             # If some serial/lot has been selected to be consumed we don't change the selection.
