@@ -1,6 +1,6 @@
 {
     "name": "Subcontracting Partner Management",
-    "version": "14.0.1.1.0",
+    "version": "14.0.2.0.0",
     "summary": "Subcontracting Partner Management",
     "author": "Ooops404, Cetmix, Odoo Community Association (OCA)",
     "license": "LGPL-3",
@@ -10,8 +10,8 @@
     "external_dependencies": {},
     "demo": [],
     "data": [
-        "views/res_partner.xml",
-        "views/stock_picking_type.xml",
+        "views/res_partner_views.xml",
+        "views/stock_picking_type_views.xml",
     ],
     "qweb": [],
     "installable": True,
