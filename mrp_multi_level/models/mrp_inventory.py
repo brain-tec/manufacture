@@ -1,5 +1,5 @@
 # © 2016 Ucamco - Wim Audenaert <wim.audenaert@ucamco.com>
-# Copyright 2016-19 ForgeFlow S.L. (https://www.forgeflow.com)
+# Copyright 2016-21 ForgeFlow S.L. (https://www.forgeflow.com)
 # - Jordi Ballester Alomar <jordi.ballester@forgeflow.com>
 # - Lois Rilo Antelo <lois.rilo@forgeflow.com>
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
@@ -47,14 +47,17 @@ class MrpInventory(models.Model):
     date = fields.Date(string="Date")
     demand_qty = fields.Float(string="Demand")
     supply_qty = fields.Float(string="Supply")
-    initial_on_hand_qty = fields.Float(string="Starting Inventory")
-    final_on_hand_qty = fields.Float(string="Forecasted Inventory")
-    to_procure = fields.Float(
-        string="To procure", compute="_compute_to_procure", store=True
+    initial_on_hand_qty = fields.Float(
+        string="Starting Inventory", group_operator="avg"
     )
+    final_on_hand_qty = fields.Float(
+        string="Forecasted Inventory", group_operator="avg"
+    )
+    to_procure = fields.Float(compute="_compute_to_procure", store=True)
     running_availability = fields.Float(
         string="Planned Availability",
-        help="Theoretical inventory level if all planned orders" "were released.",
+        group_operator="avg",
+        help="Theoretical inventory level if all planned orders were released.",
     )
     order_release_date = fields.Date(
         string="Order Release Date", compute="_compute_order_release_date", store=True
@@ -67,6 +70,15 @@ class MrpInventory(models.Model):
         related="product_mrp_area_id.supply_method",
         readonly=True,
         store=True,
+    )
+    main_supplier_id = fields.Many2one(
+        string="Main Supplier",
+        related="product_mrp_area_id.main_supplier_id",
+        readonly=True,
+        store=True,
+    )
+    mrp_planner_id = fields.Many2one(
+        related="product_mrp_area_id.mrp_planner_id", readonly=True, store=True,
     )
 
     def _compute_uom_id(self):
