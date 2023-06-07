@@ -8,6 +8,7 @@ setuptools.setup(
     description="Meta package for oca-manufacture Odoo addons",
     version=version,
     install_requires=[
+        'odoo-addon-mrp_account_analytic>=15.0dev,<15.1dev',
         'odoo-addon-mrp_account_bom_attribute_match>=15.0dev,<15.1dev',
         'odoo-addon-mrp_bom_attribute_match>=15.0dev,<15.1dev',
         'odoo-addon-mrp_bom_component_menu>=15.0dev,<15.1dev',
@@ -24,6 +25,7 @@ setuptools.setup(
         'odoo-addon-mrp_production_date_planned_finished>=15.0dev,<15.1dev',
         'odoo-addon-mrp_production_grouped_by_product>=15.0dev,<15.1dev',
         'odoo-addon-mrp_production_putaway_strategy>=15.0dev,<15.1dev',
+        'odoo-addon-mrp_production_serial_matrix>=15.0dev,<15.1dev',
         'odoo-addon-mrp_production_split>=15.0dev,<15.1dev',
         'odoo-addon-mrp_progress_button>=15.0dev,<15.1dev',
         'odoo-addon-mrp_sale_info>=15.0dev,<15.1dev',
@@ -32,6 +34,7 @@ setuptools.setup(
         'odoo-addon-mrp_warehouse_calendar>=15.0dev,<15.1dev',
         'odoo-addon-mrp_workorder_sequence>=15.0dev,<15.1dev',
         'odoo-addon-quality_control_oca>=15.0dev,<15.1dev',
+        'odoo-addon-stock_picking_product_kit_helper>=15.0dev,<15.1dev',
         'odoo-addon-stock_whole_kit_constraint>=15.0dev,<15.1dev',
     ],
     classifiers=[

@@ -21,6 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[mrp_account_analytic](mrp_account_analytic/) | 15.0.1.0.1 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Consuming raw materials and operations generated Analytic Items
 [mrp_account_bom_attribute_match](mrp_account_bom_attribute_match/) | 15.0.1.1.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Glue module between `mrp_account` and `mrp_bom_attribute_match`
 [mrp_bom_attribute_match](mrp_bom_attribute_match/) | 15.0.1.1.0 |  | Dynamic BOM component based on product attribute
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 15.0.1.0.0 |  | MRP BOM Component Menu
@@ -37,6 +38,7 @@ addon | version | maintainers | summary
 [mrp_production_date_planned_finished](mrp_production_date_planned_finished/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Allows to plan production from the desired finish date
 [mrp_production_grouped_by_product](mrp_production_grouped_by_product/) | 15.0.1.0.0 |  | Production Grouped By Product
 [mrp_production_putaway_strategy](mrp_production_putaway_strategy/) | 15.0.1.0.0 |  | Applies putaway strategies to manufacturing orders for finished products.
+[mrp_production_serial_matrix](mrp_production_serial_matrix/) | 15.0.0.1.0 |  | MRP Production Serial Matrix
 [mrp_production_split](mrp_production_split/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Split Manufacturing Orders into smaller ones
 [mrp_progress_button](mrp_progress_button/) | 15.0.2.0.0 |  | Add a button on MO to make the MO state 'In Progress'
 [mrp_sale_info](mrp_sale_info/) | 15.0.1.0.0 |  | Adds sale information to Manufacturing models
@@ -45,6 +47,7 @@ addon | version | maintainers | summary
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 15.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Considers the warehouse calendars in manufacturing
 [mrp_workorder_sequence](mrp_workorder_sequence/) | 15.0.1.2.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | adds sequence to production work orders.
 [quality_control_oca](quality_control_oca/) | 15.0.1.0.0 |  | Generic infrastructure for quality tests.
+[stock_picking_product_kit_helper](stock_picking_product_kit_helper/) | 15.0.0.1.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Set quanity in picking line based on product kit quantity
 [stock_whole_kit_constraint](stock_whole_kit_constraint/) | 15.0.1.0.0 |  | Avoid to deliver a kit partially
 
 [//]: # (end addons)
