@@ -1,6 +1,6 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* mrp_restrict_lot
+# 	* mrp_warehouse_calendar
 #
 msgid ""
 msgstr ""
@@ -16,7 +16,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.17\n"
 
-#. module: mrp_restrict_lot
-#: model:ir.model,name:mrp_restrict_lot.model_stock_rule
+#. module: mrp_warehouse_calendar
+#: model:ir.model,name:mrp_warehouse_calendar.model_mrp_production
+msgid "Production Order"
+msgstr "Ordine di produzione"
+
+#. module: mrp_warehouse_calendar
+#: model:ir.model,name:mrp_warehouse_calendar.model_stock_rule
 msgid "Stock Rule"
 msgstr "Regola di giacenza"
