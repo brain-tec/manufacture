@@ -37,7 +37,7 @@ addon | version | maintainers | summary
 [mrp_planned_order_matrix](mrp_planned_order_matrix/) | 15.0.1.1.0 |  | Allows to create fixed planned orders on a grid view.
 [mrp_production_component_availability_search](mrp_production_component_availability_search/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Filter manufacturing orders by their components availability state
 [mrp_production_date_planned_finished](mrp_production_date_planned_finished/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Allows to plan production from the desired finish date
-[mrp_production_grouped_by_product](mrp_production_grouped_by_product/) | 15.0.1.0.0 |  | Production Grouped By Product
+[mrp_production_grouped_by_product](mrp_production_grouped_by_product/) | 15.0.1.0.1 |  | Production Grouped By Product
 [mrp_production_note](mrp_production_note/) | 15.0.1.0.0 |  | Notes in production orders
 [mrp_production_operation_injection](mrp_production_operation_injection/) | 15.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Adds an existing operation from the Bill of Material
 [mrp_production_putaway_strategy](mrp_production_putaway_strategy/) | 15.0.1.0.0 |  | Applies putaway strategies to manufacturing orders for finished products.
@@ -52,6 +52,7 @@ addon | version | maintainers | summary
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 15.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Considers the warehouse calendars in manufacturing
 [mrp_workcenter_category](mrp_workcenter_category/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Adds a category to workcenters
 [mrp_workorder_lock_planning](mrp_workorder_lock_planning/) | 15.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Lock the planning of a MRP workorder to avoid rescheduling
+[mrp_workorder_lot_display](mrp_workorder_lot_display/) | 15.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Display lot number on workorders kanban
 [mrp_workorder_sequence](mrp_workorder_sequence/) | 15.0.1.2.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | adds sequence to production work orders.
 [quality_control_oca](quality_control_oca/) | 15.0.1.0.0 |  | Generic infrastructure for quality tests.
 [quality_control_stock_oca](quality_control_stock_oca/) | 15.0.1.0.0 |  | Quality control - Stock (OCA)
