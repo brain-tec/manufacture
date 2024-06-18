@@ -24,7 +24,7 @@ addon | version | maintainers | summary
 [account_move_line_mrp_info](account_move_line_mrp_info/) | 16.0.1.0.0 |  | Account Move Line Mrp Info
 [mrp_attachment_mgmt](mrp_attachment_mgmt/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Mrp Attachment Mgmt
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 16.0.1.0.0 |  | MRP BOM Component Menu
-[mrp_bom_hierarchy](mrp_bom_hierarchy/) | 16.0.1.0.1 |  | Make it easy to navigate through BoM hierarchy.
+[mrp_bom_hierarchy](mrp_bom_hierarchy/) | 16.0.1.2.0 |  | Make it easy to navigate through BoM hierarchy.
 [mrp_bom_line_formula_quantity](mrp_bom_line_formula_quantity/) | 16.0.1.0.0 | [![SirAionTech](https://github.com/SirAionTech.png?size=30px)](https://github.com/SirAionTech) | Compute the quantity of a Production Line using a formula in the BoM Line.
 [mrp_bom_location](mrp_bom_location/) | 16.0.1.1.1 |  | Adds location field to Bill of Materials and its components.
 [mrp_bom_tracking](mrp_bom_tracking/) | 16.0.1.0.0 |  | Logs any change to a BoM in the chatter
@@ -46,6 +46,7 @@ addon | version | maintainers | summary
 [mrp_subcontracting_skip_no_negative](mrp_subcontracting_skip_no_negative/) | 16.0.1.0.1 |  | MRP Subcontracting Skip No Negative
 [mrp_tag](mrp_tag/) | 16.0.1.1.0 |  | Allows to add multiple tags to Manufacturing Orders
 [mrp_unbuild_move_link](mrp_unbuild_move_link/) | 16.0.1.0.1 |  | Link the stock moves of manufacturing orders to the respective unbuild orders
+[mrp_unbuild_valuation_layer_link](mrp_unbuild_valuation_layer_link/) | 16.0.1.0.1 |  | Unbuild orders display the connected valuation layers
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 16.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Considers the warehouse calendars in manufacturing
 [mrp_workcenter_cost](mrp_workcenter_cost/) | 16.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Controls how to compute the workcenter cost (effective vs theoretical)
 [mrp_workcenter_hierarchical](mrp_workcenter_hierarchical/) | 16.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Organise Workcenters by section
