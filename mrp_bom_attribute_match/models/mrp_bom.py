@@ -92,11 +92,11 @@ class MrpBomLine(models.Model):
             if not rec.component_template_id:
                 continue
             comp_attrs = (
-                rec.component_template_id.valid_product_template_attribute_line_ids.attribute_id
-            )
+                rec.component_template_id.valid_product_template_attribute_line_ids
+            ).attribute_id
             prod_attrs = (
-                rec.bom_id.product_tmpl_id.valid_product_template_attribute_line_ids.attribute_id
-            )
+                rec.bom_id.product_tmpl_id.valid_product_template_attribute_line_ids
+            ).attribute_id
             if not comp_attrs:
                 raise ValidationError(
                     _(
@@ -108,8 +108,8 @@ class MrpBomLine(models.Model):
             if not all(attr in prod_attrs for attr in comp_attrs):
                 raise ValidationError(
                     _(
-                        "Some attributes of the dynamic component are not included into "
-                        "production product attributes."
+                        "Some attributes of the dynamic component are not "
+                        "included into production product attributes."
                     )
                 )
 
@@ -127,10 +127,10 @@ class MrpBomLine(models.Model):
             if same_attrs:
                 raise ValidationError(
                     _(
-                        "You cannot use an attribute value for attribute(s) %(attributes)s "
-                        "in the field “Apply on Variants” as it's the same attribute used "
-                        "in the field “Match on Attribute” related to the component "
-                        "%(component)s.",
+                        "You cannot use an attribute value for attribute(s) "
+                        "%(attributes)s in the field “Apply on Variants” as it's "
+                        "the same attribute used in the field “Match on Attribute” "
+                        "related to the component %(component)s.",
                         attributes=", ".join(same_attrs.mapped("name")),
                         component=rec.component_template_id.name,
                     )
@@ -312,9 +312,8 @@ class MrpBom(models.Model):
             comp_attr_ids = (
                 comp.valid_product_template_attribute_line_ids.attribute_id.ids
             )
-            prod_attr_ids = (
-                bom_product_id.valid_product_template_attribute_line_ids.attribute_id.ids
-            )
+            line_ids = bom_product_id.valid_product_template_attribute_line_ids
+            prod_attr_ids = line_ids.attribute_id.ids
             # check attributes
             if not all(item in prod_attr_ids for item in comp_attr_ids):
                 _log.info(

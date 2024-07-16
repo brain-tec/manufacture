@@ -1,0 +1,6 @@
+- Ooops404 \<<https://ooops404.com>\>
+  - Ilyas
+- [Camptocamp](https://www.camptocamp.com)
+  - Iván Todorovich \<<ivan.todorovich@camptocamp.com>\>
+- [braintec] (https://www.braintec.com)
+  - Joan Aldabó \<<joan.aldabo@braintec.com>\>
