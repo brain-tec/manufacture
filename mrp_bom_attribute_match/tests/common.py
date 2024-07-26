@@ -10,34 +10,45 @@ class TestMrpBomAttributeMatchBase(TransactionCase):
         cls.env = cls.env(context=dict(cls.env.context, tracking_disable=True))
         cls.warehouse = cls.env.ref("stock.warehouse0")
         cls.route_manufacture = cls.warehouse.manufacture_pull_id.route_id
+        product_uom_id = cls.env.ref("uom.product_uom_unit").id
         # Create products
         cls.product_sword = cls.env["product.template"].create(
             {
                 "name": "Plastic Sword",
+                "uom_id": product_uom_id,
+                "uom_po_id": product_uom_id,
                 "type": "product",
             }
         )
         cls.product_surf = cls.env["product.template"].create(
             {
                 "name": "Surf",
+                "uom_id": product_uom_id,
+                "uom_po_id": product_uom_id,
                 "type": "product",
             }
         )
         cls.product_fin = cls.env["product.template"].create(
             {
                 "name": "Surf Fin",
+                "uom_id": product_uom_id,
+                "uom_po_id": product_uom_id,
                 "type": "product",
             }
         )
         cls.product_plastic = cls.env["product.template"].create(
             {
                 "name": "Plastic Component",
+                "uom_id": product_uom_id,
+                "uom_po_id": product_uom_id,
                 "type": "product",
             }
         )
         cls.p1 = cls.env["product.template"].create(
             {
                 "name": "P1",
+                "uom_id": product_uom_id,
+                "uom_po_id": product_uom_id,
                 "type": "product",
                 "route_ids": [Command.link(cls.route_manufacture.id)],
             }
@@ -45,6 +56,8 @@ class TestMrpBomAttributeMatchBase(TransactionCase):
         cls.p2 = cls.env["product.template"].create(
             {
                 "name": "P2",
+                "uom_id": product_uom_id,
+                "uom_po_id": product_uom_id,
                 "type": "product",
                 "route_ids": [Command.link(cls.route_manufacture.id)],
             }
@@ -52,6 +65,8 @@ class TestMrpBomAttributeMatchBase(TransactionCase):
         cls.p3 = cls.env["product.template"].create(
             {
                 "name": "P3",
+                "uom_id": product_uom_id,
+                "uom_po_id": product_uom_id,
                 "type": "product",
                 "route_ids": [Command.link(cls.route_manufacture.id)],
             }
@@ -59,11 +74,13 @@ class TestMrpBomAttributeMatchBase(TransactionCase):
         cls.product_9 = cls.env["product.product"].create(
             {
                 "name": "Paper",
+                "uom_id": product_uom_id,
             }
         )
         cls.product_10 = cls.env["product.product"].create(
             {
                 "name": "Stone",
+                "uom_id": product_uom_id,
             }
         )
         cls.product_attribute = cls.env["product.attribute"].create(
@@ -162,7 +179,7 @@ class TestMrpBomAttributeMatchBase(TransactionCase):
             for vals in line_form_vals:
                 with form.bom_line_ids.new() as line_form:
                     for key, value in vals.items():
-                        field = line_form._model._fields.get(key)
+                        field = cls.env[line_form._record._name]._fields.get(key)
                         if field and field.relational:  # pragma: no cover
                             if value and not isinstance(value, BaseModel):
                                 value = cls.env[field.comodel_name].browse(value)

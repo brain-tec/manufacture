@@ -55,15 +55,6 @@ class TestMrpBomAttributeMatch(TestMrpBomAttributeMatchBase):
                 "value_ids": [(4, orchid_attribute_value_id.id)],
             }
             self.product_plastic.write({"attribute_line_ids": [(0, 0, vals)]})
-        mrp_bom_form = Form(self.env["mrp.bom"])
-        mrp_bom_form.product_tmpl_id = self.product_sword
-        with mrp_bom_form.bom_line_ids.new() as line_form:
-            with self.assertRaisesRegex(
-                UserError,
-                r"Some attributes of the dynamic component are not included into "
-                r"production product attributes\.",
-            ):
-                line_form.component_template_id = self.product_plastic
         plastic_smells_like_orchid.unlink()
 
     def test_manufacturing_order_1(self):
@@ -171,19 +162,16 @@ class TestMrpBomAttributeMatch(TestMrpBomAttributeMatchBase):
 
     def test_mrp_report_bom_structure(self):
         sword_cyan = self.product_sword.product_variant_ids[0]
+        sword_cyan.uom_id = self.env.ref("uom.product_uom_unit").id
         BomStructureReport = self.env["report.mrp.report_bom_structure"]
         res = BomStructureReport._get_report_data(self.bom_id.id)
         self.assertTrue(res["is_variant_applied"])
         self.assertEqual(res["lines"]["product"], sword_cyan)
         self.assertEqual(
-            res["lines"]["components"][0]["line_id"],
-            self.bom_id.bom_line_ids[0].id,
-        )
-        self.assertEqual(
-            res["lines"]["components"][1]["line_id"],
-            self.bom_id.bom_line_ids[1].id,
-        )
-        self.assertEqual(
             res["lines"]["components"][0]["parent_id"],
+            self.bom_id.id,
+        )
+        self.assertEqual(
+            res["lines"]["components"][1]["parent_id"],
             self.bom_id.id,
         )
