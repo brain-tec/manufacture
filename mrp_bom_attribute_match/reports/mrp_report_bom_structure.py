@@ -2,15 +2,27 @@
 # @author Iván Todorovich <ivan.todorovich@camptocamp.com>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import api, Command, models
+from odoo import Command, api, models
 
 
 class ReportBomStructure(models.AbstractModel):
     _inherit = "report.mrp.report_bom_structure"
 
     @api.model
-    def _get_bom_data(self, bom, warehouse, product=False, line_qty=False, bom_line=False, level=0,
-                      parent_bom=False, parent_product=False, index=0, product_info=False, ignore_stock=False):
+    def _get_bom_data(
+        self,
+        bom,
+        warehouse,
+        product=False,
+        line_qty=False,
+        bom_line=False,
+        level=0,
+        parent_bom=False,
+        parent_product=False,
+        index=0,
+        product_info=False,
+        ignore_stock=False,
+    ):
         """
         OVERRIDE to add the `attachment_ids` to the bom_report
         """
@@ -37,14 +49,25 @@ class ReportBomStructure(models.AbstractModel):
             if to_ignore_line_ids:
                 bom.bom_line_ids = [Command.unlink(id) for id in to_ignore_line_ids]
 
-        bom_report_line = super()._get_bom_data(new_bom, warehouse, product, line_qty, bom_line, level, parent_bom,
-                                                parent_product, index, product_info, ignore_stock)
+        bom_report_line = super()._get_bom_data(
+            new_bom,
+            warehouse,
+            product,
+            line_qty,
+            bom_line,
+            level,
+            parent_bom,
+            parent_product,
+            index,
+            product_info,
+            ignore_stock,
+        )
         # Replace any NewId value by the real record id
         # Otherwise it's evaluated as False in some situations, and it may cause issues
         if has_template_lines:
-            bom_report_line['bom'] = bom
-            bom_report_line['bom_id'] = bom.id
-            for component in bom_report_line['components']:
+            bom_report_line["bom"] = bom
+            bom_report_line["bom_id"] = bom.id
+            for component in bom_report_line["components"]:
                 for key, value in component.items():
                     if isinstance(value, models.NewId):
                         component[key] = value.origin

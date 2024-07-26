@@ -151,6 +151,10 @@ Contributors
 
    -  Iván Todorovich <ivan.todorovich@camptocamp.com>
 
+-  [braintec] (https://www.braintec.com)
+
+   -  Joan Aldabó <joan.aldabo@braintec.com>
+
 Maintainers
 -----------
 
