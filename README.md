@@ -22,6 +22,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_move_line_mrp_info](account_move_line_mrp_info/) | 15.0.1.1.0 |  | Account Move Line Mrp Info
+[mrp_2_steps_consumed_qty_sync](mrp_2_steps_consumed_qty_sync/) | 15.0.0.1.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Update consumed quantities when in 2 steps production scope the picking is validated
 [mrp_account_analytic](mrp_account_analytic/) | 15.0.1.0.2 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Consuming raw materials and operations generated Analytic Items
 [mrp_account_bom_attribute_match](mrp_account_bom_attribute_match/) | 15.0.1.1.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Glue module between `mrp_account` and `mrp_bom_attribute_match`
 [mrp_bom_attribute_match](mrp_bom_attribute_match/) | 15.0.1.1.1 |  | Dynamic BOM component based on product attribute
@@ -48,6 +49,7 @@ addon | version | maintainers | summary
 [mrp_production_split](mrp_production_split/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Split Manufacturing Orders into smaller ones
 [mrp_progress_button](mrp_progress_button/) | 15.0.2.0.0 |  | Add a button on MO to make the MO state 'In Progress'
 [mrp_sale_info](mrp_sale_info/) | 15.0.1.0.1 |  | Adds sale information to Manufacturing models
+[mrp_set_quantity_to_reservation](mrp_set_quantity_to_reservation/) | 15.0.0.1.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | MRP Set Quantity To Reservation
 [mrp_subcontracting_lot_number_propagation](mrp_subcontracting_lot_number_propagation/) | 15.0.0.1.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a serial number from a component to a finished product (subcontracting integration)
 [mrp_subcontracting_no_negative](mrp_subcontracting_no_negative/) | 15.0.0.1.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Disallow negative stock levels in subcontractor locations.
 [mrp_subcontracting_purchase_link](mrp_subcontracting_purchase_link/) | 15.0.1.0.0 |  | Link Purchase Order Line to Subcontract Productions

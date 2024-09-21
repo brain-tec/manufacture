@@ -9,6 +9,7 @@ setuptools.setup(
     version=version,
     install_requires=[
         'odoo-addon-account_move_line_mrp_info>=15.0dev,<15.1dev',
+        'odoo-addon-mrp_2_steps_consumed_qty_sync>=15.0dev,<15.1dev',
         'odoo-addon-mrp_account_analytic>=15.0dev,<15.1dev',
         'odoo-addon-mrp_account_bom_attribute_match>=15.0dev,<15.1dev',
         'odoo-addon-mrp_bom_attribute_match>=15.0dev,<15.1dev',
@@ -35,6 +36,7 @@ setuptools.setup(
         'odoo-addon-mrp_production_split>=15.0dev,<15.1dev',
         'odoo-addon-mrp_progress_button>=15.0dev,<15.1dev',
         'odoo-addon-mrp_sale_info>=15.0dev,<15.1dev',
+        'odoo-addon-mrp_set_quantity_to_reservation>=15.0dev,<15.1dev',
         'odoo-addon-mrp_subcontracting_lot_number_propagation>=15.0dev,<15.1dev',
         'odoo-addon-mrp_subcontracting_no_negative>=15.0dev,<15.1dev',
         'odoo-addon-mrp_subcontracting_purchase_link>=15.0dev,<15.1dev',
