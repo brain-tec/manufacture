@@ -28,6 +28,7 @@ setuptools.setup(
         'odoo14-addon-mrp_bom_tracking',
         'odoo14-addon-mrp_component_operation',
         'odoo14-addon-mrp_component_operation_scrap_reason',
+        'odoo14-addon-mrp_lot_number_propagation',
         'odoo14-addon-mrp_lot_on_hand_first',
         'odoo14-addon-mrp_lot_production_date',
         'odoo14-addon-mrp_multi_level',
