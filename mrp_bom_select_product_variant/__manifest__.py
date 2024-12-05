@@ -3,18 +3,16 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 {
-    "name": "MRP BoM Image",
-    "summary": "Add product Images to BoM",
-    "version": "16.0.1.0.1",
-    "category": "Manufacture",
+    "name": "MRP BoM Select Product Variant",
+    "summary": "Favors Product variant selection for BOM creation.",
+    "version": "16.0.1.0.0",
     "author": "GRAP, Odoo Community Association (OCA)",
+    "category": "Manufacturing",
+    "depends": ["mrp"],
     "website": "https://github.com/OCA/manufacture",
     "license": "AGPL-3",
-    "depends": [
-        "mrp",
-    ],
     "data": [
-        "views/view_mrp_bom.xml",
+        "view/mrp_bom.xml",
     ],
     "installable": True,
 }
