@@ -43,6 +43,7 @@ addon | version | maintainers | summary
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 16.0.1.1.2 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
 [mrp_packaging_default](mrp_packaging_default/) | 16.0.1.0.2 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Include packaging info in MRP by default
 [mrp_planned_order_matrix](mrp_planned_order_matrix/) | 16.0.1.0.0 |  | Allows to create fixed planned orders on a grid view.
+[mrp_product_characterisation](mrp_product_characterisation/) | 16.0.1.0.0 |  | Adds product characterisation 'Intermediate Products'.
 [mrp_production_note](mrp_production_note/) | 16.0.1.0.0 |  | Notes in production orders
 [mrp_production_quant_manual_assign](mrp_production_quant_manual_assign/) | 16.0.1.0.0 |  | Production - Manual Quant Assignment
 [mrp_restrict_lot](mrp_restrict_lot/) | 16.0.1.0.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | MRP Restrict Lot
