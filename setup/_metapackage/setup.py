@@ -14,6 +14,7 @@ setuptools.setup(
         'odoo-addon-mrp_bom_hierarchy>=16.0dev,<16.1dev',
         'odoo-addon-mrp_bom_image>=16.0dev,<16.1dev',
         'odoo-addon-mrp_bom_line_formula_quantity>=16.0dev,<16.1dev',
+        'odoo-addon-mrp_bom_line_net_qty>=16.0dev,<16.1dev',
         'odoo-addon-mrp_bom_location>=16.0dev,<16.1dev',
         'odoo-addon-mrp_bom_note>=16.0dev,<16.1dev',
         'odoo-addon-mrp_bom_produce_delay>=16.0dev,<16.1dev',
