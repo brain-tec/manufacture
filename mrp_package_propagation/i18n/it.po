@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-10-28 15:58+0000\n"
+"PO-Revision-Date: 2025-02-13 11:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: mrp_package_propagation
 #: model:ir.model.fields,help:mrp_package_propagation.field_mrp_bom__package_propagation
@@ -50,7 +50,7 @@ msgstr "Il collo è propagato?"
 #. module: mrp_package_propagation
 #: model:ir.model,name:mrp_package_propagation.model_mrp_production
 msgid "Manufacturing Order"
-msgstr ""
+msgstr "Ordine di produzione"
 
 #. module: mrp_package_propagation
 #. odoo-python
