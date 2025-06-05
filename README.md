@@ -34,7 +34,7 @@ addon | version | maintainers | summary
 [mrp_bom_product_price_margin](mrp_bom_product_price_margin/) | 16.0.1.1.0 |  | Handle Product Standard, Sale Price and Margin with its BoM cost
 [mrp_bom_select_product_variant](mrp_bom_select_product_variant/) | 16.0.1.0.0 |  | Favors Product variant selection for BOM creation.
 [mrp_bom_tag](mrp_bom_tag/) | 16.0.1.2.0 | <a href='https://github.com/quentinDupont'><img src='https://github.com/quentinDupont.png' width='32' height='32' style='border-radius:50%;' alt='quentinDupont'/></a> | Add tags on your BoM to find it easily
-[mrp_bom_tracking](mrp_bom_tracking/) | 16.0.1.0.0 |  | Logs any change to a BoM in the chatter
+[mrp_bom_tracking](mrp_bom_tracking/) | 16.0.1.0.1 |  | Logs any change to a BoM in the chatter
 [mrp_bom_version](mrp_bom_version/) | 16.0.1.0.0 |  | BoM versioning
 [mrp_bom_widget_section_and_note_one2many](mrp_bom_widget_section_and_note_one2many/) | 16.0.1.0.0 | <a href='https://github.com/quentinDupont'><img src='https://github.com/quentinDupont.png' width='32' height='32' style='border-radius:50%;' alt='quentinDupont'/></a> | Add section and note in Bills of Materials
 [mrp_default_workorder_time](mrp_default_workorder_time/) | 16.0.1.0.0 | <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Adds an MRP default workorder time
@@ -47,6 +47,7 @@ addon | version | maintainers | summary
 [mrp_planned_order_matrix](mrp_planned_order_matrix/) | 16.0.1.0.0 |  | Allows to create fixed planned orders on a grid view.
 [mrp_product_characterisation](mrp_product_characterisation/) | 16.0.1.1.0 |  | Adds product characterisation 'Intermediate Products'.
 [mrp_product_produce_delay_in_hour](mrp_product_produce_delay_in_hour/) | 16.0.1.0.0 | <a href='https://github.com/quentinDupont'><img src='https://github.com/quentinDupont.png' width='32' height='32' style='border-radius:50%;' alt='quentinDupont'/></a> | Handle MRP Product Produce Delay in hours not in days.
+[mrp_production_allow_recursive](mrp_production_allow_recursive/) | 16.0.1.0.0 |  | MRP Production Allow Recursive
 [mrp_production_back_to_draft](mrp_production_back_to_draft/) | 16.0.1.0.0 |  | Allows to return to draft a confirmed or cancelled MO.
 [mrp_production_grouped_by_product](mrp_production_grouped_by_product/) | 16.0.1.0.0 |  | Production Grouped By Product
 [mrp_production_move_line_auto_fill](mrp_production_move_line_auto_fill/) | 16.0.1.0.0 |  | Mrp Production Move Line Auto Fill
@@ -69,12 +70,13 @@ addon | version | maintainers | summary
 [mrp_workcenter_cost](mrp_workcenter_cost/) | 16.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Controls how to compute the workcenter cost (effective vs theoretical)
 [mrp_workcenter_hierarchical](mrp_workcenter_hierarchical/) | 16.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Organise Workcenters by section
 [mrp_workcenter_workorder_link](mrp_workcenter_workorder_link/) | 16.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Switch easily between Work Centers and Work Orders
+[mrp_workorder_last_worker](mrp_workorder_last_worker/) | 16.0.1.0.0 |  | See the last user who worked on a workorder
 [mrp_workorder_lot_display](mrp_workorder_lot_display/) | 16.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Display lot number on workorders kanban
 [mrp_workorder_priority](mrp_workorder_priority/) | 16.0.1.0.0 |  | Add a priority field to workorders
 [mrp_workorder_sequence](mrp_workorder_sequence/) | 16.0.0.1.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | adds sequence to production work orders.
 [product_mrp_info](product_mrp_info/) | 16.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds smart button in product form view linking to manufacturing order list.
 [quality_control_mrp_oca](quality_control_mrp_oca/) | 16.0.1.1.0 |  | MRP extension for quality control (OCA)
-[quality_control_oca](quality_control_oca/) | 16.0.1.4.0 |  | Generic infrastructure for quality tests.
+[quality_control_oca](quality_control_oca/) | 16.0.1.5.0 |  | Generic infrastructure for quality tests.
 [quality_control_stock_oca](quality_control_stock_oca/) | 16.0.1.2.0 |  | Quality control - Stock (OCA)
 
 [//]: # (end addons)
