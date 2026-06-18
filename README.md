@@ -1,4 +1,7 @@
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# manufacture
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/manufacture&target_branch=15.0)
 [![Pre-commit Status](https://github.com/OCA/manufacture/actions/workflows/pre-commit.yml/badge.svg?branch=15.0)](https://github.com/OCA/manufacture/actions/workflows/pre-commit.yml?query=branch%3A15.0)
 [![Build Status](https://github.com/OCA/manufacture/actions/workflows/test.yml/badge.svg?branch=15.0)](https://github.com/OCA/manufacture/actions/workflows/test.yml?query=branch%3A15.0)
@@ -6,8 +9,6 @@
 [![Translation Status](https://translation.odoo-community.org/widgets/manufacture-15-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/manufacture-15-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# manufacture
 
 TODO: add repo description.
 
@@ -25,6 +26,7 @@ addon | version | maintainers | summary
 [mrp_2_steps_consumed_qty_sync](mrp_2_steps_consumed_qty_sync/) | 15.0.0.1.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Update consumed quantities when in 2 steps production scope the picking is validated
 [mrp_account_analytic](mrp_account_analytic/) | 15.0.1.0.2 | <a href='https://github.com/dreispt'><img src='https://github.com/dreispt.png' width='32' height='32' style='border-radius:50%;' alt='dreispt'/></a> | Consuming raw materials and operations generated Analytic Items
 [mrp_account_bom_attribute_match](mrp_account_bom_attribute_match/) | 15.0.1.1.1 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Glue module between `mrp_account` and `mrp_bom_attribute_match`
+[mrp_bom_assign_auto](mrp_bom_assign_auto/) | 15.0.1.0.0 |  | Auto select th first BoM that has all components available
 [mrp_bom_attribute_match](mrp_bom_attribute_match/) | 15.0.1.1.1 |  | Dynamic BOM component based on product attribute
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 15.0.1.0.0 |  | MRP BOM Component Menu
 [mrp_bom_hierarchy](mrp_bom_hierarchy/) | 15.0.1.0.0 |  | Make it easy to navigate through BoM hierarchy.
