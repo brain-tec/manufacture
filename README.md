@@ -29,6 +29,7 @@ addon | version | maintainers | summary
 [mrp_multi_level](mrp_multi_level/) | 19.0.1.0.4 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 19.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allows to consider demand estimates using MRP multi level.
 [mrp_production_back_to_draft](mrp_production_back_to_draft/) | 19.0.1.0.1 |  | Allows to return to draft a confirmed or cancelled MO.
+[mrp_production_generator_by_date_interval](mrp_production_generator_by_date_interval/) | 19.0.1.0.0 |  | MRP Production Generator By Date Interval
 [mrp_production_note](mrp_production_note/) | 19.0.1.0.0 |  | Notes in production orders
 [mrp_repair_order](mrp_repair_order/) | 19.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Create repair order from manufacturing order
 [mrp_sale_info](mrp_sale_info/) | 19.0.1.0.0 |  | Adds sale information to Manufacturing models
@@ -36,6 +37,7 @@ addon | version | maintainers | summary
 [mrp_subcontracting_skip_no_negative](mrp_subcontracting_skip_no_negative/) | 19.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | MRP Subcontracting Skip No Negative
 [mrp_tag](mrp_tag/) | 19.0.1.0.0 |  | Allows to add multiple tags to Manufacturing Orders
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 19.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Considers the warehouse calendars in manufacturing
+[purchase_mrp_distribution](purchase_mrp_distribution/) | 19.0.1.0.0 |  | Purchase MRP Distribution
 [quality_control_oca](quality_control_oca/) | 19.0.1.0.0 |  | Generic infrastructure for quality tests.
 [stock_replenishment_mrp_bom_selection](stock_replenishment_mrp_bom_selection/) | 19.0.1.0.0 |  | Stock Replenishment MRP BoM Selection
 
