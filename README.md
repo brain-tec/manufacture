@@ -52,7 +52,7 @@ addon | version | maintainers | summary
 [mrp_production_check_bom_alignment](mrp_production_check_bom_alignment/) | 18.0.1.0.4 |  | Verify that a Manufacturing Order's components and workorder are consistent with its Bill of Materials.
 [mrp_production_date_planned_finished](mrp_production_date_planned_finished/) | 18.0.1.0.1 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Allows to plan production from the desired finish date
 [mrp_production_location_picking_type](mrp_production_location_picking_type/) | 18.0.1.0.1 |  | Add production location field to picking types for MRP operations.
-[mrp_production_note](mrp_production_note/) | 18.0.1.0.0 |  | Notes in production orders
+[mrp_production_note](mrp_production_note/) | 18.0.1.1.0 |  | Notes in production orders
 [mrp_production_picking_type_from_route](mrp_production_picking_type_from_route/) | 18.0.1.0.0 |  | Updates the operation type creating MO based on the product
 [mrp_production_putaway_strategy](mrp_production_putaway_strategy/) | 18.0.1.0.0 |  | Applies putaway strategies to manufacturing orders for finished products.
 [mrp_propagate_lot_info](mrp_propagate_lot_info/) | 18.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Propagate lot data from the origin consuming materials
@@ -75,6 +75,7 @@ addon | version | maintainers | summary
 [product_mrp_info](product_mrp_info/) | 18.0.1.1.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds smart button in product form view linking to manufacturing order list.
 [quality_control_mrp_oca](quality_control_mrp_oca/) | 18.0.1.0.0 |  | MRP extension for quality control (OCA)
 [quality_control_oca](quality_control_oca/) | 18.0.1.4.0 |  | Generic infrastructure for quality tests.
+[quality_control_product_manufacturer](quality_control_product_manufacturer/) | 18.0.1.0.0 |  | Provides information related to Manufacturer under Inspection
 [quality_control_stock_oca](quality_control_stock_oca/) | 18.0.1.2.0 |  | Quality control - Stock (OCA)
 [sale_mrp_bom_menu](sale_mrp_bom_menu/) | 18.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Add a Sales > Products > Bills of Materials menu
 [stock_whole_kit_constraint](stock_whole_kit_constraint/) | 18.0.1.0.1 |  | Avoid to deliver a kit partially
