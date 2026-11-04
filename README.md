@@ -24,14 +24,17 @@ addon | version | maintainers | summary
 [account_move_line_mrp_info](account_move_line_mrp_info/) | 19.0.1.0.0 |  | Account Move Line Mrp Info
 [mrp_attachment_mgmt](mrp_attachment_mgmt/) | 19.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mrp Attachment Mgmt
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 19.0.1.0.0 |  | MRP BOM Component Menu
+[mrp_bom_hierarchy](mrp_bom_hierarchy/) | 19.0.1.0.0 |  | Make it easy to navigate through BoM hierarchy.
 [mrp_bom_image](mrp_bom_image/) | 19.0.1.0.0 |  | Add product Images to BoM
 [mrp_bom_note](mrp_bom_note/) | 19.0.1.0.0 |  | Notes in Bill of Materials
 [mrp_bom_tracking](mrp_bom_tracking/) | 19.0.1.1.0 |  | Logs any change to a BoM in the chatter
+[mrp_lot_number_propagation](mrp_lot_number_propagation/) | 19.0.1.0.0 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Propagate a serial number from a component to a finished product
 [mrp_multi_level](mrp_multi_level/) | 19.0.1.0.5 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 19.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allows to consider demand estimates using MRP multi level.
 [mrp_production_back_to_draft](mrp_production_back_to_draft/) | 19.0.1.0.1 |  | Allows to return to draft a confirmed or cancelled MO.
 [mrp_production_generator_by_date_interval](mrp_production_generator_by_date_interval/) | 19.0.1.0.0 |  | MRP Production Generator By Date Interval
 [mrp_production_note](mrp_production_note/) | 19.0.1.0.0 |  | Notes in production orders
+[mrp_production_unique_lot](mrp_production_unique_lot/) | 19.0.1.0.0 |  | Ensures that production lot numbers are unique and cannot be reused in another manufacturing order.
 [mrp_progress_button](mrp_progress_button/) | 19.0.1.0.0 |  | Add a button on MO to make the MO state 'In Progress'
 [mrp_repair_order](mrp_repair_order/) | 19.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Create repair order from manufacturing order
 [mrp_sale_info](mrp_sale_info/) | 19.0.1.0.0 |  | Adds sale information to Manufacturing models
